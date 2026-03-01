@@ -35,13 +35,3 @@ print(f"""--- Increase in Edge Thickness ---
 Increase in mean thickness: {gradient_stats['Image B']['mean'] - gradient_stats['Image A']['mean']}
 Increase in std thickness: {gradient_stats['Image B']['std'] - gradient_stats['Image A']['std']}
 Increase in max thickness: {gradient_stats['Image B']['max'] - gradient_stats['Image A']['max']}""")
-
-plt.imshow(gradient_a, cmap='hot')
-plt.axis("off")
-plt.savefig(f"output/conv_feature_map/spray/{n}-A-hot.png", pad_inches = 0, bbox_inches='tight', dpi=300);
-
-plt.imshow(gradient_b, cmap='hot')
-plt.axis("off")
-plt.savefig(f"output/conv_feature_map/spray/{n}-B-hot.png", pad_inches = 0, bbox_inches='tight', dpi=300);
-
-17.2358 / 167.8488 * 100
