@@ -6,7 +6,7 @@ This repository contains the official PyTorch implementation for the paper: "[Pr
 
 ## Project Summary
 
-This work addresses a core challenge in semantic segmentation: the loss of small object information due to aggressive downsampling. We propose a simple, two-fold approach to mitigate this pooling-induced feature loss: (1) a Gaussian blur (GB) pre-processing, and (2) a lightweight graph convolution (GC) module at the U-Net bottleneck. Our method is designed to enhance the segmentation of fine-scale structures, such as small droplets in liquid sprays.
+This work addresses a core challenge in semantic segmentation: the loss of small object information due to aggressive downsampling. We propose a simple, two-fold approach to mitigate this pooling-induced feature loss: (1) a Gaussian blur (GB) pre-processing, and (2) a lightweight graph convolution (GC) module at the U-Net bottleneck. Our method is designed to enhance the segmentation of fine-grained structures, such as small droplets in liquid sprays.
 
 ## Key Results
 
