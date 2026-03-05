@@ -6,18 +6,18 @@ This repository contains the official PyTorch implementation for the paper: "[Pr
 
 ## Project Summary
 
-This work addresses a core challenge in semantic segmentation: the loss of small object information due to aggressive downsampling. We propose a simple, two-fold approach to mitigate this pooling-induced feature loss: (1) an input-level Gaussian blur pre-processing step, and (2) a lightweight graph convolution module at the U-Net bottleneck. Our method is designed to enhance the segmentation of fine-scale structures, such as small droplets in liquid sprays.
+This work addresses a core challenge in semantic segmentation: the loss of small object information due to aggressive downsampling. We propose a simple, two-fold approach to mitigate this pooling-induced feature loss: (1) a Gaussian blur (GB) pre-processing, and (2) a lightweight graph convolution (GC) module at the U-Net bottleneck. Our method is designed to enhance the segmentation of fine-scale structures, such as small droplets in liquid sprays.
 
 ## Key Results
 
 Our method significantly improves segmentation performance, particularly for fine-grained objects. The table below summarizes the key results on our liquid spray dataset, using contour accuracy as the primary metric.
 
-| Method | Contour Accuracy (%) |
-| :------- | :------: |
-| Standard U-Net | 28.40
-| U-Net + Gaussian Blur | 31.89
-| U-Net + Graph Convolution (UNet-GC) | 29.04
-| Our Method (U-Net + Blur + GCN) | 33.09
+| Method                       | Contour Accuracy (%) |
+|:-----------------------------| :------: |
+| Standard U-Net               | 28.40
+| U-Net + GB (UNet-GB)         | 31.89
+| U-Net + GC (UNet-GC)         | 29.04
+| U-Net + GC + GB (UNet-GC-GB) | 33.09
 
 Our full model achieves a 16.5% relative improvement over the standard U-Net baseline. Ablation studies confirm that Gaussian blurring is the dominant contributor to this gain, with the graph module offering complementary improvements.
 
