@@ -1,6 +1,6 @@
 # Preserving Droplet Structures with Gaussian Blur in U-Net
 
-This repository contains the official PyTorch implementation for the paper: "[Preserving Fine-Grained Droplet Structures by Spatial Gaussian Blurring Against Pooling Deformation in U-Net-Based Semantic Segmentation](https://ieeexplore.ieee.org/document/11394763)" published in IEEE Access 2024.
+This repository contains the official PyTorch implementation for the paper: "[Preserving Fine-Grained Droplet Structures by Spatial Gaussian Blurring Against Pooling Deformation in U-Net-Based Semantic Segmentation](https://ieeexplore.ieee.org/document/11394763)" published in IEEE Access 2026.
 
 ![phd-access2-motivation.png](phd-access2-motivation.png)
 
